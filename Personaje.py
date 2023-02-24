@@ -25,6 +25,9 @@ class Personaje:
         cargador= cargador + municiones
         print ("El arma tiene " + str(cargador) + " balas")
         
+    def __pensar (self):
+       print("Estoy pensando...")
+        
     #Declaramos los metodos get y set
     def getNombre(self):
         return self.__nombre
@@ -40,5 +43,9 @@ class Personaje:
         return self.__altura
     def setAltura (self, alt):
         self.__altura = alt
+    
+    def getPensar(self):
+        return self.__pensar    
+    
         
     
